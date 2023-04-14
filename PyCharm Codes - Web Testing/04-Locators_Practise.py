@@ -8,15 +8,16 @@ serv_obj = Service("G:\INFOSYS Lectures & Codes\Stream Training\JAR Files\CD.exe
 
 driver = webdriver.Chrome(service=serv_obj)
 
-driver.get("https://demo.nopcommerce.com/")
+driver.get("https://amazon.in")
 
 driver.maximize_window()
 
 
-# LOCATORS DEMO
+#By CLASS_NAME & TAG_NAME
+sliders = driver.find_elements(By.CLASS_NAME, "copilot-secure-display")
+print("No of classes with this name is: ",len(sliders))
 
-# driver.find_element(By.ID, "small-searchterms").send_keys("Lenovo Thinkpad X1 Carbon Laptop")
-# driver.find_element(By.XPATH, "/html/body/div[6]/div[1]/div[2]/div[2]/form/button").click()
-
+anchor_tags = driver.find_elements(By.TAG_NAME, "a")
+print("Nof of anchor tags present on Amazon.in is: ", len(anchor_tags) )
 
 
