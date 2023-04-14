@@ -1,2 +1,2 @@
 # Python Codes
- A complete list of all the python codes 
+This repo consists of all the Python Testing codes from beginner level to the advanced level
