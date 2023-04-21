@@ -16,6 +16,9 @@ act = ActionChains(driver)   # Selenium Package for Mouse operations
 time.sleep(3)
 
 #MOUSE HOVER
-act.move_to_element(a).move_to_element(b).click(c).perform
+act.move_to_element(a)
+act.move_to_element(b)
+act.click(c)
+act.perform()
 time.sleep(5)
 
